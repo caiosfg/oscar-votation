@@ -1,0 +1,52 @@
+﻿@model Introducao.Models.Filmes
+
+
+@{
+    ViewBag.Title = "Index";
+}
+<img src="~/Image/Oscar.Jpg" align="right" width="700px" />
+<h2>Votação Oscar de Corredor</h2>
+<p>Vote no Filmes da Cine Semana</p>
+<br />
+
+<b>Filme Votado</b>
+<p>@Model.FilmeId <br />
+   @Model.FilmeNome <br />
+   @Model.FilmeGenero</p>
+
+@using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+{
+    <fieldset>
+        <legend>
+            Informações de Filmes
+        </legend>
+        
+            <div>
+                @Html.LabelFor(x => x.FilmeId)
+            </div>
+            <div>
+                @Html.EditorFor(x => x.FilmeId)
+            </div>
+
+            <div>
+                @Html.LabelFor(x => x.FilmeNome)
+            </div>
+            <div>
+                @Html.EditorFor(x => x.FilmeNome)
+            </div>
+
+            <div>
+                @Html.LabelFor(x => x.FilmeGenero)
+            </div>
+            <div>
+                @Html.EditorFor(x => x.FilmeGenero)
+            </div>
+        
+       
+
+        <p><input type="submit" value="Enviar" /></p>
+
+    </fieldset>
+}
+
+

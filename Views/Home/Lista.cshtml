@@ -1,0 +1,32 @@
+﻿@model Introducao.Models.Filmes
+@{
+    ViewBag.Title = "Lista";
+}
+
+<img src="~/Image/goesto.Jpg" align="right" width="470px" />
+
+<h2>Lista</h2>
+<div>
+    <b>@Html.LabelFor(x=>x.FilmeId)</b>
+</div>
+<div>
+    @ViewData["FilmeId"]
+</div>
+
+<div>
+    <b>@Html.LabelFor(x => x.FilmeNome)</b>
+</div>
+<div>
+    @ViewData["FilmeNome"]
+</div>
+
+<div>
+    <b>@Html.LabelFor(x => x.FilmeGenero)</b>
+</div>
+<div>
+    @ViewData["FilmeGenero"]
+</div>
+
+<br />
+<br />
+@Html.ActionLink("Voltar", "Index", "Home")
