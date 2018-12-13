@@ -151,11 +151,13 @@
       <DependentUpon>Banco.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NoticiasController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Filmes.cs" />
+    <Compile Include="Models\Noticias.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -200,10 +202,12 @@
     <Content Include="Views\Home\Lista.cshtml" />
     <Content Include="Views\Usuario\Resultado.cshtml" />
     <Content Include="Views\Usuario\Usuario.cshtml" />
+    <Content Include="Views\Home\Noticias.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Image\" />
+    <Folder Include="Views\Noticias\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

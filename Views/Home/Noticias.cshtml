@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Introducao.Models.Noticias>
+
+@{
+    ViewBag.Title = "Noticias";
+}
+<h2>Noticias do Oscar</h2>
+
+<div>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.ActionLink(item.Titulo), "MostrarNoticia", "Home", new{
+                }
+            </li>
+        }
+    </ul>
+</div>
